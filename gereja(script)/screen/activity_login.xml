@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0sp"
+       >
+
+        <TextView
+            android:id="@+id/textH1"
+            android:layout_width="307sp"
+            android:layout_height="27sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="52sp"
+            android:layout_marginTop="72sp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_horizontal"
+            android:text="Masukkan Nomor Ponsel"
+            android:textAlignment="center"
+            android:textColor="#092C4C"
+            android:textFontWeight="700"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textH2"
+            android:textAlignment="center"
+            android:layout_width="379sp"
+            android:layout_height="38sp"
+            android:layout_below="@+id/textH1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="16sp"
+            android:layout_marginTop="8sp"
+            android:fontFamily="@font/poppins"
+            android:lineHeight="18sp"
+            android:text="Gunakan nomor yang terdaftar di Gereja HKBP Rajawali untuk dapat masuk sebagai anggota jemaat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="379sp"
+            android:layout_height="48sp"
+            android:layout_below="@+id/textH2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="16sp"
+            android:layout_marginTop="48sp"
+            android:background="@drawable/input_box_otp"
+            android:drawableLeft="@drawable/ic_number_62"
+            android:hint="Contoh 81234567890"
+            android:inputType="number"
+            android:paddingLeft="8sp" />
+    </RelativeLayout>
+
+    <Button
+        android:textColor="@color/button_text_changed"
+        android:enabled="false"
+        android:id="@+id/btnOtp"
+        android:fontFamily="@font/poppins"
+        android:layout_width="379sp"
+        android:layout_height="58sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24sp"
+        android:layout_marginHorizontal="16sp"
+        android:backgroundTint="@color/button_changed_status"
+        android:text="Minta Kode OTP"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textFontWeight="600"
+        />
+
+
+</RelativeLayout>
